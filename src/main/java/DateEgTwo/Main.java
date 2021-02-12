@@ -19,6 +19,8 @@ public class Main {
         String dateString = reader.readLine();
 
         LocalDate anyDate =LocalDate.parse(dateString,dateTimeFormatter);
+        System.out.println(anyDate);
+        System.out.println(LocalDate.now());
         long npOfDays =  ChronoUnit.DAYS.between(anyDate,LocalDate.now());
         long npOfMonths =  ChronoUnit.MONTHS.between(anyDate,LocalDate.now());
 
